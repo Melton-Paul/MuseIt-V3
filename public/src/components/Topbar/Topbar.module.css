@@ -1,0 +1,94 @@
+.topBar {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  padding: 1.5rem;
+  background: rgb(190, 177, 177);
+  z-index: 2;
+  transition: all 0.15s;
+}
+.profile-button {
+  position: absolute;
+  max-width: 150px;
+  width: 100%;
+  right: 290px;
+  top: 15px;
+  background: black;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  border: none;
+  padding-right: 1.4rem;
+  transition: all 0.2s;
+}
+.profile-button p {
+  font-weight: bolder;
+}
+.profile-button:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+.profile-button-icon {
+  background: rgb(68, 59, 59);
+  padding: 1rem;
+  border-radius: 50%;
+  margin-left: -5px;
+}
+.profile-button-icon i {
+  font-size: 1.6rem;
+}
+.profile-button-carat {
+  font-size: 1.5rem;
+}
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+  justify-content: center;
+}
+.modal {
+  position: absolute;
+  background: rgb(36, 33, 33);
+  border-radius: 3px;
+  top: 63px;
+  right: 294px;
+  max-width: 200px;
+  width: 100%;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0px 3px 6px 1px #141111;
+}
+.profile-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0;
+  color: whitesmoke;
+}
+.profile-list li {
+  padding: 1.2rem 1.5rem;
+  cursor: pointer;
+}
+.profile-list li:hover {
+  background: rgb(66, 60, 60);
+}
+.profile-list_logout {
+  border-top: 1px solid #4b4a4a;
+}
+.profile-list a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+@media screen and (min-width: 768px) {
+  .topBar {
+    display: initial;
+  }
+}

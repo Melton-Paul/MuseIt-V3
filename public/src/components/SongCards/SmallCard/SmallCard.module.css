@@ -1,0 +1,38 @@
+.small-card {
+  display: flex;
+  width: 100%;
+  background: rgba(83, 74, 74, 0.2);
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+.small-card .text {
+  font-size: 1.6rem;
+  color: white;
+}
+
+.small-card .album {
+  max-width: 100px;
+  width: 100%;
+  margin-right: 2rem;
+}
+
+.small-card .play {
+  width: 50px;
+  position: absolute;
+  right: 15px;
+  border-radius: 50px;
+}
+.play:hover {
+  transform: scale(1.1);
+}
+
+.small-card:hover {
+  background: rgba(122, 113, 113, 0.8);
+}
